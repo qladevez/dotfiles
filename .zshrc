@@ -55,22 +55,14 @@ alias gtkcc='gcc `pkg-config --cflags --libs gtk+-3.0`'
 alias ec='emacs -nw'
 
 # Alias d'i3
-alias vgaleft='xrandr --output VGA1 --auto --left-of LVDS1'
-alias vgaright='xrandr --output VGA1 --auto --right-of LVDS1'
-alias hdleft='xrandr --output HDMI1 --auto --left-of LVDS1'
-alias hdright='xrandr --output HDMI1 --auto --right-of LVDS1'
-alias vgadup='xrandr --output VGA1 --auto --same-as LVDS1'
-alias hddup='xrandr --output HDMI1 --auto --same-as LVDS1'
-alias vgaoff='xrandr --output VGA1 --off'
-alias hdoff='xrandr --output HDMI1 --off'
+external=DP-1
+laptop=eDP-1
 
-alias lapoff='swaymsg output eDP-1 disable'
-alias lapon='swaymsg output eDP-1 enable'
-alias hdoff='swaymsg output HDM1-A-1 disable'
-alias hdon='swaymsg output HDMI1-A-1 enable'
-alias lapleft='swaymsg output eDP-1 pos 0 0 && swaymsg output HDMI-A-1 pos 1920 0'
-alias lapright='swaymsg output HDMI-A-1 pos 0 0 & swaymsg output eDP-1 pos 1920 0'
-alias lapleftvga='swaymsg output eDP-1 pos 0 0 && swaymsg output DP-4 pos 1920 0'
+alias exleftlapright='xrandr --output $external --auto --left-of $laptop'
+alias exrightlapleft='xrandr --output $laptop --auto --left-of $external'
+alias externalonly='xrandr --output $laptop --off && xrandr --output $external --auto'
+alias laptoponly='xrandr --output $external --off && xrandr --output $laptop --auto'
+alias duplicatescreens='xrandr --output $external --same-as $laptop'
 
 # Alias df -h
 alias df='df -h'
