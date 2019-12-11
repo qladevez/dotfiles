@@ -78,7 +78,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -179,7 +179,7 @@ bar {
         position bottom
 }
 
-# exec feh --bg-center /home/aceawan/Images/sweden_bg.jpg
+exec feh --bg-center /home/qladevez/wallpaper.jpg
 
 # exec xmodmap /etc/xmodmap.conf
 
@@ -191,6 +191,9 @@ bar {
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 # bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+bindsym $mod+space exec playerctl play-pause
+bindsym $mod+Prior exec playerctl next
+bindsym $mod+Next exec playerctl previous
 # bindsym XF86AudioPlay exec playerctl play-pause
 # bindsym XF86AudioPause exec playerctl pause-pause
 # bindsym XF86AudioNext exec playerctl next
