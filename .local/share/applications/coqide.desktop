@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=CoqIDE
-Exec=/home/qladevez/.opam/4.09.0/bin/coqide
+Exec=/home/qladevez/.opam/default/bin/coqide
 Type=Application
-Icon=/home/qladevez/.opam/4.09.0/share/coq/coq.png
+Icon=/home/qladevez/.opam/default/share/coq/coq.png

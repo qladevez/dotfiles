@@ -48,6 +48,17 @@
 (setq show-paren-style 'parenthesis)
 (show-paren-mode +1)
 
+;;C configuration
+(require 'cc-mode)
+(setq-default c-basic-offset 4)
+(setq c-default-style (cons '(c-mode . "java") c-default-style))
+(setq-default tab-width 4 indent-tabs-mode t)
+(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+(add-hook 'c-mode-hook
+       (lambda ()
+         (setq-local electric-indent-chars
+                     (remq ?\n electric-indent-chars))))
+
 (require 'telephone-line)
 (set-face-attribute 'telephone-line-evil-normal
                     nil
@@ -107,7 +118,7 @@
 ;; OCaml
 (require 'cl)
 
-(load "/home/qladevez/.opam/4.09.0/share/emacs/site-lisp/tuareg-site-file")
+(load "/home/qladevez/.opam/default/share/emacs/site-lisp/tuareg-site-file")
 
 (require 'tuareg)
 (setq auto-mode-alist
