@@ -174,7 +174,7 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(compilation-message-face (quote default))
- '(custom-enabled-themes (quote (nyx)))
+ '(custom-enabled-themes (quote (adwaita)))
  '(custom-safe-themes
    (quote
     ("3cd4f09a44fe31e6dd65af9eb1f10dc00d5c2f1db31a427713a1784d7db7fdfc" "669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" "2642a1b7f53b9bb34c7f1e032d2098c852811ec2881eec2dc8cc07be004e45a0" "59171e7f5270c0f8c28721bb96ae56d35f38a0d86da35eab4001aebbd99271a8" "c3d4af771cbe0501d5a865656802788a9a0ff9cf10a7df704ec8b8ef69017c68" default)))
