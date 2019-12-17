@@ -178,17 +178,17 @@ bar {
         position bottom
 }
 
-exec feh --bg-center /home/qladevez/wallpaper.jpg
+exec feh --bg-center /home/qladevez/black.png
 
 # exec xmodmap /etc/xmodmap.conf
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
-# bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
-# bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym $mod+F12 exec pactl set-sink-volume 0 +2%
+bindsym $mod+F11 exec pactl set-sink-volume 0 -2%
+bindsym $mod+F10 exec pactl set-sink-mute 0 toggle
 
-# bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-# bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 bindsym $mod+space exec playerctl play-pause
 bindsym $mod+Prior exec playerctl next
