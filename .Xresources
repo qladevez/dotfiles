@@ -1,0 +1,8 @@
+! emacs UI elements
+Emacs.menuBar: 0
+Emacs.toolBar: 0
+Emacs.verticalScrollBars: off
+
+! emacs font
+Emacs.FontBackend: xft,x
+Emacs.font: JetBrains Mono:size=16
